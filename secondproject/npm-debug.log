@@ -1,0 +1,136 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', '-g', 'node' ]
+2 info using npm@3.10.3
+3 info using node@v6.3.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData node
+8 silly fetchNamedPackageData node
+9 silly mapToRegistry name node
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'node',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'node',
+12 silly mapToRegistry   name: 'node',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/node
+14 verbose request uri https://registry.npmjs.org/node
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 7:40:58 AM
+17 verbose request id e94300b702a607dd
+18 verbose etag "4RB0I162TMBFF7IWMPCBRMD3L"
+19 http request GET https://registry.npmjs.org/node
+20 http 304 https://registry.npmjs.org/node
+21 verbose headers { date: 'Wed, 10 Aug 2016 07:40:58 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   etag: '"4RB0I162TMBFF7IWMPCBRMD3L"',
+21 verbose headers   age: '31',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-sin6927-SIN',
+21 verbose headers   'x-cache': 'HIT',
+21 verbose headers   'x-cache-hits': '1',
+21 verbose headers   'x-timer': 'S1470814858.932909,VS0,VE0',
+21 verbose headers   vary: 'Accept-Encoding' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Wed, 10 Aug 2016 07:40:58 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     etag: '"4RB0I162TMBFF7IWMPCBRMD3L"',
+22 silly get     age: '31',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-sin6927-SIN',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '1',
+22 silly get     'x-timer': 'S1470814858.932909,VS0,VE0',
+22 silly get     vary: 'Accept-Encoding' } ]
+23 verbose etag https://registry.npmjs.org/node from cache
+24 verbose get saving node to /home/vagrant/.npm/registry.npmjs.org/node/.cache.json
+25 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly resolveWithNewModule node@0.0.0 checking installable status
+39 silly cache add args [ 'node', null ]
+40 verbose cache add spec node
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: 'node',
+41 silly cache add   scope: null,
+41 silly cache add   escapedName: 'node',
+41 silly cache add   name: 'node',
+41 silly cache add   rawSpec: '',
+41 silly cache add   spec: 'latest',
+41 silly cache add   type: 'tag' }
+42 silly addNamed node@latest
+43 verbose addNamed "latest" is being treated as a dist-tag for node
+44 info addNameTag [ 'node', 'latest' ]
+45 silly mapToRegistry name node
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npmjs.org/
+48 silly mapToRegistry data Result {
+48 silly mapToRegistry   raw: 'node',
+48 silly mapToRegistry   scope: null,
+48 silly mapToRegistry   escapedName: 'node',
+48 silly mapToRegistry   name: 'node',
+48 silly mapToRegistry   rawSpec: '',
+48 silly mapToRegistry   spec: 'latest',
+48 silly mapToRegistry   type: 'tag' }
+49 silly mapToRegistry uri https://registry.npmjs.org/node
+50 verbose addNameTag registry:https://registry.npmjs.org/node not in flight; fetching
+51 verbose get https://registry.npmjs.org/node not expired, no request
+52 silly addNameTag next cb for node with tag latest
+53 silly addNamed node@0.0.0
+54 verbose addNamed "0.0.0" is a plain semver version for node
+55 warn deprecated node@0.0.0: To update or install node, go to http://nodejs.org/
+56 silly cache afterAdd node@0.0.0
+57 verbose afterAdd /home/vagrant/.npm/node/0.0.0/package/package.json not in flight; writing
+58 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+59 verbose afterAdd /home/vagrant/.npm/node/0.0.0/package/package.json written
+60 silly loadAllDepsIntoIdealTree Finishing
+61 silly loadIdealTree Finishing
+62 silly currentTree lib
+63 silly idealTree lib
+63 silly idealTree `-- node@0.0.0
+64 silly generateActionsToTake Starting
+65 silly install generateActionsToTake
+66 warn checkPermissions Missing write access to /usr/lib/node_modules
+67 silly rollbackFailedOptional Starting
+68 silly rollbackFailedOptional Finishing
+69 silly runTopLevelLifecycles Starting
+70 silly runTopLevelLifecycles Finishing
+71 silly install printInstalled
+72 verbose stack Error: EACCES: permission denied, access '/usr/lib/node_modules'
+72 verbose stack     at Error (native)
+73 verbose cwd /vagrant/secondproject
+74 error Linux 4.4.0-21-generic
+75 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "node"
+76 error node v6.3.1
+77 error npm  v3.10.3
+78 error path /usr/lib/node_modules
+79 error code EACCES
+80 error errno -13
+81 error syscall access
+82 error Error: EACCES: permission denied, access '/usr/lib/node_modules'
+82 error     at Error (native)
+82 error  { Error: EACCES: permission denied, access '/usr/lib/node_modules'
+82 error     at Error (native)
+82 error   errno: -13,
+82 error   code: 'EACCES',
+82 error   syscall: 'access',
+82 error   path: '/usr/lib/node_modules' }
+83 error Please try running this command again as root/Administrator.
+84 verbose exit [ -13, true ]

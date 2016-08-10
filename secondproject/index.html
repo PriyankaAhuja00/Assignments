@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Website Title & Description for Search Engine purposes -->
+    <title>MyBootstrap</title>
+    <meta name="description" content="">
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="includes/css/styles.css" rel="stylesheet">
+    <!-- Include Modernizr in the head, before any other Javascript -->
+    <script src="includes/js/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+    <div class="navbar navbar-default">
+        <div class="container">
+            <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img src="images/logo.png" alt="Your Logo"></a>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li id="navbar">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li id="navbar1">
+                        <a href="Research.html">Research & Care</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Collection <strong class="caret"></strong></a>
+                        <ul class=dropdown-menu>
+                            <li>
+                                <a href="#">About Collection</a>
+                            </li>
+                            <li>
+                                <a href="#">Artist Rooms</a>
+                            </li>
+                            <li>
+                                <a href="#">Highlights</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Online Collection</li>
+                            <li>
+                                <a href="#">Artists A-Z</a>
+                            </li>
+                            <li>
+                                <a href="#">Subjects</a>
+                            </li>
+                            <li>
+                                <a href="#">Simple Search</a>
+                            </li>
+                            <li>
+                                <a href="#">Advance Search</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Visit <strong class="caret"></strong></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">National</a>
+                            </li>
+                            <li>
+                                <a href="#">Modern</a>
+                            </li>
+                            <li>
+                                <a href="#">Portrait</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">See also</li>
+                            <li>
+                                <a href="#">Paxton House</a>
+                            </li>
+                            <li>
+                                <a href="#">Duff House</a>
+                            </li>
+                        </ul>
+                        <!--end dropdown menu-->
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Education <strong class="caret"></strong></a>
+                        <ul class=dropdown-menu>
+                            <li>
+                                <a href="#">Competitions</a>
+                            </li>
+                            <li>
+                                <a href="#">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">Communities</a>
+                            </li>
+                            <li>
+                                <a href="#">Articles & Publications</a>
+                            </li>
+                            <li>
+                                <a href="#">Online Activities</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form pull-left">
+                    <div class="search-bar">
+                        <input type="text" class="form-control" placeholder="Search here..." id="searchInput">
+                        <button type="submit" class="btn btn-default">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </div>
+                </form>
+                <!-- end navbar form-->
+                <!--end nav-->
+                <ul class="nav navbar-nav pull-right">
+                    <li class="user">
+                        <a href="#"><span class="glyphicon glyphicon-user"></span>Login</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav pull-right">
+                    <li class="user">
+                        <a href="#"><span class="glyphicon glyphicon-pencil"></span>Sign Up</a>
+                    </li>
+                </ul>
+                <!-- end navpull-right-->
+            </div>
+            <!--end nav-collapse-->
+        </div>
+        <!--end container-->
+    </div>
+    <!--end navbar-->
+    <!-- myCoursel Begins-->
+    <div class="carousel slide" data-ride="carousel" id="myCarousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+            <li data-slide-to="1" data-target="#myCarousel"></li>
+            <li data-slide-to="2" data-target="#myCarousel"></li>
+            <li data-slide-to="3" data-target="#myCarousel"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active" id="slide1">
+                <img class="images" src="images/homepage1.jpg" alt="Sliding image 1" />
+                <div class="carousel-caption">
+                    <h3>#A season of  amazing art</h3>
+                    <p>Enjoy the amazing arts of different artists!</p>
+                </div>
+                <!-- end carousel-caption-->
+            </div>
+            <!-- end item -->
+            <div class="item" id="slide2">
+                <img class="images" src="images/homepage2.jpg" alt="Sliding image 2" />
+                <div class="carousel-caption">
+                    <h3>#Explore our works of art</h3>
+                    <p>Surprizing arts can be seen here which will blow your mind!</p>
+                </div>
+                <!-- end carousel-caption-->
+            </div>
+            <!-- end item -->
+            <div class="item" id="slide3">
+                <img class="images" src="images/homepage3.jpg" alt="Sliding image 3" />
+                <div class="carousel-caption">
+                    <h3>#Come Face to Face with a master piece</h3>
+                    <p>Master pieces collected from all over the world can be viewed here!</p>
+                </div>
+                <!-- end carousel-caption-->
+            </div>
+            <!-- end item -->
+            <div class="item" id="slide4">
+                <img class="images" src="images/homepage4.jpg" alt="Sliding image 4" />
+                <div class="carousel-caption">
+                    <h3>#Go Beyond the art</h3>
+                    <p>There are such masterpieces which are beyond the art and beyond your imagination!</p>
+                </div>
+                <!-- end carousel-caption-->
+            </div>
+            <!-- end item -->
+        </div>
+        <!-- carousel-inner -->
+        <!-- Controls -->
+        <a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+        <a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+    </div>
+    <!-- end myCarousel -->
+    <!--Callout-->
+    <div class="container">
+        <div class="row" id="bigCallout">
+            <div class="col-12">
+                <!-- Visible only on small devices -->
+                <div class="alert alert-success " id="successAlert">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <h4>Success!</h4>
+                    <p>You just made a vote for this art gallery. Click the "x" in the top right corner to close this bad boy.</p>
+                </div>
+                <!-- end alert -->
+                <!-- Visible only on small devices -->
+                <div class="well well-small visible-sm visible-xs">
+                    <a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span> Give us a call!</a>
+                </div>
+                <!-- end well-small -->
+                <div class="well">
+                    <div class="page-header">
+                        <h1>National Galleries Voting Section <small>Cheer our users</small></h1>
+                    </div>
+                    <!-- end page-header -->
+                    <p class="lead">The National Galleries offers extensive learning and outreach programmes suited to the needs of a broad range of audiences. With a busy calendar of talks, tours, workshops and activities, we aim to be a benchmark for excellence in the sphere of gallery education, facilitating public access to art of the very highest quality.</p>
+                    <a href="" class="btn btn-large btn-primary" id="alertMe">Click here to Vote</a>
+                    <a href="" class="btn btn-large btn-link">or give thumbs up</a>
+                </div>
+                <!-- end well -->
+            </div>
+            <!-- end col-12 -->
+        </div>
+        <!-- end bigCallout -->
+    </div>
+    <!-- end container -->
+    <!--features heading-->
+    <div class="container" id="main">
+        <div class="row" id="featuresHeading">
+            <div class="col-12">
+                <h2>More Features</h2>
+                <p class="lead">The National Galleries has over 96,000 works in the permanent collection. You can view information and images of 5102 artworks online, including 1778 paintings, 933 works on paper, 266 sculptures, and 1395 photographs. Keep coming back as more are added regularly.</p>
+            </div>
+            <!-- end col-12 -->
+        </div>
+        <!-- end featuresHeading -->
+        <div class="row" id="features">
+            <div class="col-sm-4 feature">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Surreal Encounters:Edward</h3>
+                    </div>
+                    <!-- end panel-heading -->
+                    <img src="images/edwardjames.jpg" alt="Edward James" class="img-circle">
+                    <p>Art historian and Dawn Ades discusses Edward James, one of the collectors at the heart of Surreal Encounters.</p>
+                    <a href="https://blog.lofty.com/resources/timeline-art-movements/" target="_blank" class="btn btn-warning btn-block">More Historical Images</a>
+                </div>
+                <!-- end panel -->
+            </div>
+            <!-- end feature -->
+            <div class="col-sm-4 feature">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">National Galleries on Instagram</h3>
+                    </div>
+                    <!-- end panel-heading -->
+                    <img src="images/kids.jpg" alt="Kids Image" class="img-circle">
+                    <p>Taking you behind the scenes of National Galleries. For more images and information follow us on Instagram</p>
+                    <a href="https://www.instagram.com/national_gallery/" target="_blank" class="btn btn-danger btn-block">More Images</a>
+                </div>
+                <!-- end panel -->
+            </div>
+            <!-- end feature -->
+            <div class="col-sm-4 feature">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Comedy at the Portrait Gallery</h3>
+                    </div>
+                    <!-- end panel-heading -->
+                    <img src="images/girlportrait.png" alt="Girls Portrait" class="img-circle">
+                    <p>Join us this Friday 12 August for a the finest comedy, music and poetry Edinburgh has to offer.Hurry Up!!</p>
+                    <a href="http://make2fun.blogspot.in/2013/04/amazing-funny-3d-arts-funny-illusion.html" target="_blank" class="btn btn-info btn-block">More Comedy Portraits</a>
+                </div>
+                <!-- end panel -->
+            </div>
+            <!-- end feature -->
+        </div>
+        <!-- end features -->
+        <!--sections-->
+        <div class="row" id="moreinfo">
+            <div class="col-sm-6">
+                <h3>Neat Tabbable Content</h3>
+                <div class="tabbable">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+                        <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab1">
+                            <h4><span class="glyphicon glyphicon-map-marker"></span>Our Location <small>More Like our favourite surf spot</small></h4>
+                            <iframe class="mapiframe" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62215.991793668014!2d77.58723985549467!3d12.93985831839021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbengalore+art+gallery!5e0!3m2!1sen!2sin!4v1470732541403"></iframe>
+                            <p>
+                                National Gallery of Modern Art is an art gallery in Bangalore. It was inaugurated in the year 2009. It showcases modern Indian art and houses paintings by Raja Ravi Verma, Jamini Roy, Amrita Sher-Gil, Rabindranath Tagore and a large number of Modern and Contemporary artists.
+                            </p>
+                            <p>NGMA Bangalore currently houses approximately 500 exhibits that are spread across a corridor, tiny rooms and large spacious halls that span two floors. You could cover this in between 1 and 2 hours. The exhibits have been displayed - classified into broad categories - according to different time periods, art schools and by artists. One can see paintings by Raja Ravi Verma, Jamini Roy, Amrita Sher-Gil, the Tagore brothers and Rabindranath Tagore and a large number of Modern and Contemporary artists.</p>
+                        </div>
+                        <!--end tab pane-->
+                        <div class="tab-pane" id="tab2">
+                            <h4>Our Collection</h4>
+                            <img src="images/tab2image.jpg" class="thumbnail pull-left" alt="Collection image 1">
+                            <p>
+                                National Gallery of Modern Art is an art gallery in Bangalore. It was inaugurated in the year 2009. It showcases modern Indian art and houses paintings by Raja Ravi Verma, Jamini Roy, Amrita Sher-Gil, Rabindranath Tagore and a large number of Modern and Contemporary artists.
+                            </p>
+                            <p>NGMA Bangalore currently houses approximately 500 exhibits that are spread across a corridor, tiny rooms and large spacious halls that span two floors. You could cover this in between 1 and 2 hours. The exhibits have been displayed - classified into broad categories - according to different time periods, art schools and by artists. One can see paintings by Raja Ravi Verma, Jamini Roy, Amrita Sher-Gil, the Tagore brothers and Rabindranath Tagore and a large number of Modern and Contemporary artists.</p>
+                            <hr>
+                            <a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>Click for a Modal Window!</a>
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">A Modal Window</h4>
+                                        </div>
+                                        <!--end modal header-->
+                                        <div class="modal-body">
+                                            <h4>Text in a modal</h4>
+                                            <form class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label" for="inputName">Name</label>
+                                                    <div class="col-lg-10">
+                                                        <input class="form-control" id="inputName" placeholder="Name" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+                                                    <div class="col-lg-10">
+                                                        <input class="form-control" id="inputEmail" placeholder="Email" type="email">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label" for="inputMessage">Message</label>
+                                                    <div class="col-lg-10">
+                                                        <textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+                                                        <button class="btn btn-success pull-right" type="submit">Send!</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <!--end modal-body-->
+                                        <div class="modal-footer">
+                                            <button class="btn btn-dafault" data-dismiss="modal" type="button">Close</button>
+                                            <button class="btn btn-primary" type="button">Save Changes</button>
+                                        </div>
+                                        <!--end modal-footer-->
+                                    </div>
+                                    <!--end modal content-->
+                                </div>
+                                <!--end modal dialog-->
+                            </div>
+                            <!--end myModal-->
+                        </div>
+                        <!--end tab pane-->
+                    </div>
+                    <!--end of tab content-->
+                </div>
+                <!--end tabbable-->
+            </div>
+            <!--end col-sm-6-->
+            <div class="col-sm-6">
+                <h3>Visit Us</h3>
+                <p>The National Galleries has a remit both to research the collection and to facilitate outside research by making the Gallery libraries, archives and print rooms available to the public. The Galleries also has a duty of care towards the collection. Our conservation specialists employ a range of techniques and technologies to preserve the condition of the artworks.</p>
+                <h4>Art Groups</h4>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">National</h4>
+                        <p class="list-group-item-text">The Mound, Edinburgh, EH2 2EL. During August 2016 we are open daily, 10am-6pm, Thursdays until 7pm.</p>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">Modern</h4>
+                        <p class="list-group-item-text">75 Belford Road, Edinburgh, EH4 3DR. During August 2016 we are open daily, 10am-6pm.</p>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">Portrait</h4>
+                        <p class="list-group-item-text">1 Queen Street, Edinburgh, EH2 1JD. During August 2016 we are open daily, 10am-6pm, Thursdays until 7pm.s</p>
+                    </a>
+                </div>
+                <!--List-group-->
+                <h4>Libraries & Archives</h4>
+                <p>The National Galleries Library, Archive and Special Collections provide a rich resource for the study of art. Dedicated study areas at each of our three sites are open to the public by appointment, Monday to Friday.</p>
+                <p>For archive enquiries: gmaarchive@nationalgalleries.org or 0131 624 6268 For library and print room enquiries: gmalibrary@nationalgalleries.org or 0131 624 6253</p>
+            </div>
+            <!-- end col-sm-6-->
+        </div>
+        <!--end more info-->
+        <hr>
+        <div class="row" id="moreCourses">
+            <div class="col-12">
+                <h3 class="moreCoursesh3">Purchase Collections Online</h3>
+                <div class="thumbnails row">
+                    <div class="col-sm-6">
+                        <div class="thumbnail">
+                            <img src="images/onlinecollection1.jpg" alt="Art Collection 1">
+                            <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> <sup>$</sup>39</div>
+                            <div class="caption">
+                                <h3><b>Pitlessie Fair</b></h3>
+                                <p>Painted when Wilkie was just nineteen, this ambitious 'portrait' of the annual May fair in Pitlessie Village demonstrated his remarkable talent and the kind of painting in which he was to excel. Its subject and character were radical departures from the established conventions of history painting, although it was equally demanding in its compositional organisation and variety of figures. Wilkie was inspired by examples of seventeenth century Dutch and Flemish paintings and also by Scottish folklore and cultural traditions celebrated in contemporary literature. He met with immediate success in London with this as his showpiece, prompting several prestigious commissions.</p>
+                                <p><a href="https://www.udemy.com/build-beautiful-html5-website/" class="btn btn-primary btn-small" target="_blank">Order Online</a> <a href="https://www.nationalgalleries.org/collection/subjects/interior" target="_blank" class="btn btn-small btn-link">View more</a></p>
+                            </div>
+                            <!-- end caption -->
+                        </div>
+                        <!-- end thumbnail -->
+                    </div>
+                    <!-- end col-6 -->
+                    <div class="col-sm-6">
+                        <div class="thumbnail">
+                            <img src="images/onlinecollection2.jpg" alt="Art collection 2">
+                            <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> <sup>$</sup>45</div>
+                            <div class="caption">
+                                <h3><b>A View of Florence from the North Bank of the Arno</b></h3>
+                                <p>This idealised view of Florence recalls the idyllic classical landscapes of Claude and Poussin. The topographical detail was based on drawings made on the spot, but the overall composition, with picnicking figures, was conceived in the artist's studio. Fabre draws your attention from the shaded foreground to the sun-lit river and city, set against a hazy backdrop of snow-capped peaks. In the middle distance by the weir is a fourteenth-century watermill, which was destroyed in the nineteenth century to make way for the Lungarno Vespucci. Beyond is the Palazzo Signoria, and to the left the dome of the cathedral, Santa Maria del Fiore.</p>
+                                <br>
+                                <p><a href="https://www.udemy.com/web-hosting-101/" class="btn btn-primary btn-small" target="_blank">Order Online</a> <a href="https://www.nationalgalleries.org/collection/subjects/dresses" target="_blank" class="btn btn-small btn-link">View more</a></p>
+                            </div>
+                            <!-- end caption -->
+                        </div>
+                        <!-- end thumbnail -->
+                    </div>
+                    <!-- end col-6 -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end col-12 -->
+        </div>
+        <!-- end moreCourses -->
+    </div>
+    <!--end of main container -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h6>Copyright &copy; 2016 {Priyanka Ahuja}</h6>
+                </div>
+                <!-- end col-sm-2 -->
+                <div class="col-sm-4">
+                    <h6 class="footerheadings">About Us</h6>
+                    <p>National Galleries is a charity registered in Scotland (No. SC003728)</p>
+                    <p>National Galleries Foundation is a charity registered in Scotland (No. SC043024)</p>
+                </div>
+                <!-- end col-sm-4 -->
+                <div class="col-sm-2">
+                    <h6 class="footerheadings">Navigation</h6>
+                    <ul class="unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Picture Library</a></li>
+                        <li><a href="#">Opening Hours</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- end col-sm-2 -->
+                <div class="col-sm-2">
+                    <h6 class="footerheadings">Follow Us</h6>
+                    <ul class="unstyled">
+                        <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.googleplus.com/" target="_blank">Google Plus</a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+                <!-- end col-sm-2 -->
+                <div class="col-sm-2">
+                    <h6>Coded with <span class="glyphicon glyphicon-heart"></span> by Priyanka</h6>
+                </div>
+                <!-- end col-sm-2 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </footer>
+    <!-- All Javascript at the bottom of the page for faster page loading -->
+    <!-- First try for the online version of jQuery-->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- If no online access, fallback to our hardcoded version of jQuery -->
+    <script>
+    window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="includes/js/script.js"></script>
+</body>
+
+</html>
