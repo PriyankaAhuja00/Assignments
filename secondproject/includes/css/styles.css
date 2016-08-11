@@ -31,7 +31,7 @@ Notes:	 Hand coded for Udemy.com
    margin-bottom: 15px;
 }
 footer{
-   background:#40E0D0;
+   background:#99CCFF;
    color:#eee;
    font-size: 11px;
    padding: 20px;
@@ -44,7 +44,7 @@ footer{
    Typography
    -------------------------------------- */
 /* Callout */
-body{
+ body{
    -webkit-font-smoothing: antialiased;
    text-rendering: optimizeLegibility;
 }
@@ -76,7 +76,7 @@ ul.unstyled{
       margin-bottom: 40px;
    }
  .navbar{
-   background:#40E0D0;
+   background:#99CCFF;
  }
  #navbar{
    padding-top:40px; 
