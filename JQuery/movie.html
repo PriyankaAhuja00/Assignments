@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Website Title & Description for Search Engine purposes -->
+    <title>MyBootstrap</title>
+    <meta name="description" content="">
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="includes/css/styles.css" rel="stylesheet">
+    <!-- Include Modernizr in the head, before any other Javascript -->
+    <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <script src="includes/js/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+            <h1 id="header"> Curious Avenue Film Company </h1>
+            <p id="title">Enter movie to search</p>
+                    <div class="search-bar">
+                        <input type="text" placeholder="What do you want to watch?" id="movietitle">
+                        <button type="submit" id="searchmovie">
+                           Search here
+                        </button>
+                    </div>
+<div class="table-responsive" >
+<img id="image" src="images/main.jpg" alt="background image"/>
+<table id="table" RULES=ROWS FRAME=BOX>
+    <caption>List of Movies</caption>
+    <thead>
+        <tr>
+            <th id="thead1">Poster</th>
+            <th id="thead2">Description</th>
+            <!-- <th >Title</th>
+            <th >Year</th>
+            <th >imdbID</th>
+            <th >Type</th> -->
+
+            
+        </tr></thead>
+        <tbody>
+            <h1 id="alertmsg"> OOPS! Movie Not Found.. Enter correct movie name</h1>
+        </tbody>
+</table>
+</div>
+
+<script src="includes/js/jquery-1.8.0.min.js"></script>
+<script src="ajaxfile.js"></script>
+</body>
+</html>
