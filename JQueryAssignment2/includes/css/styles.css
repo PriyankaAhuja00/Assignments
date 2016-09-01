@@ -1,0 +1,108 @@
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+ body{
+   /*background: LightPink;*/
+   background: url("../../images/bg.jpeg") top center fixed;
+   /*width:100%;*/
+}
+#header{
+   text-align: center;
+   font-size: 80px;
+   font-weight: bolder;
+   font-family: 'Ravi Prakash', cursive;
+}
+#title{
+   text-align: center;
+   font-size: 40px;
+   font-weight: inherit;
+   margin-top: 50px;
+   color: blue;
+   font-family: 'Lobster', cursive;
+}
+.search-bar{
+   text-align: center;
+}
+#bookid{
+      width: 300px;
+      height: 50px;
+      font-size: 20px;
+}
+#searchbook{
+   height: 50px;
+   background-color: green;
+   font-size: 20px;
+   font-weight: bold;
+}
+#viewall{
+   height: 50px;
+   background-color: #F08080;
+   font-size: 20px;
+   font-weight: bold;
+}
+.btn{
+   font-size: 20px;
+   font-weight: bold;
+   height: 50px;
+   margin-left: 10px;
+}
+#table{
+   border: 3px solid black;
+   width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left:0px;
+   font-size: 20px;
+   text-align: center;
+}
+caption{
+   font-weight: bold;
+   font-size: 30px;
+   color: black;
+   text-align: center;
+   margin-top: 50px;
+}
+#thead , th{
+   border: 2px solid black;
+   margin-left: auto;
+   margin-right: auto;
+   padding:10px;
+   font-size: 20px;
+   text-align: center; 
+}
+#alertmsg{
+   font-size: 20px;
+   font-weight: bold;
+   color: red;
+   text-align: center;
+}
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+/* Portrait & landscape phone */
+@media (max-width: 320px) {
+   #table{
+      width:100%;
+      font-size: 5px;
+   }
+}
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 480px) {
+#table{
+      width:100%;
+      font-size: 8px;
+   }
+}
+@media (max-width: 768px) {
+   #table{
+      width:100%;
+      font-size: 12px;
+   }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+ 
+}

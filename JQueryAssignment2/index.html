@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Website Title & Description for Search Engine purposes -->
+    <title>Jquery Assignment 2</title>
+    <meta name="description" content="">
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="includes/css/styles.css" rel="stylesheet">
+    <!-- Include Modernizr in the head, before any other Javascript -->
+    <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <script src="includes/js/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="header"> StackRoute Library </h1>
+        <p id="title">Enter Book Id to search </p>
+        <div class="search-bar">
+            <input type="text" placeholder="Enter Book Id here" id="bookid">
+            <button type="submit" id="searchbook">
+                Search
+            </button>
+            <br>
+            <br>
+            <button type="submit" id="viewall">View All</button>
+            <a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>Click to Add Books </a>
+            <!-- <a href="http://localhost:8080" role="button" class="btn btn-primary" id ="back">Back</a> -->
+        </div>
+        <div>
+            <table class="table-responsive" id="table" border="3">
+                <caption>Available Books</caption>
+                <thead>
+                   <tr id="thead">
+                    <th>Book_ID</th>
+                    <th>Book_Name</th>
+                    <th>Edition</th>
+                    <th>Year</th>
+                    <th>Author_Name</th>
+                    <th>Price</th>
+                    <th>Edit </th>
+                    <th>Delete </th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="container" id="alertmsg"></div>
+    <div>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Add Books Here</h4>
+                    </div>
+                    <!--end modal header-->
+                    <div class="modal-body">
+                        <form class="form-horizontal" id="myform">
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label" for="inputName" >Book Name</label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" id="bookname" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label" for="inputEdition" >Edition</label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" id="edition" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label" for="inputYear" >Year</label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" id="year" type="number">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label" for="inputAuthorname" >Author Name</label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" id="authorname" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label" for="inputPrice" >Price</label>
+                                <div class="col-lg-9">
+                                    <input class="form-control" id="price" type="number">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--end modal-body-->
+                    <div class="modal-footer">
+                        <button class="btn btn-dafault" data-dismiss="modal" type="button">Close</button>
+                        <button class="btn btn-primary" type="button" id="add" data-dismiss="modal">Add Book</button>
+                        <button class="btn btn-primary" type="button" id="save" data-dismiss="modal">Save Changes</button>
+                    </div>
+                    <!--end modal-footer-->
+                </div>
+                <!--end modal content-->
+            </div>
+            <!--end modal dialog-->
+        </div>
+        <!--end myModal-->
+        <div id="postswrapper">
+            <div class="item"></div>
+
+            <div id="loadmoreajaxloader" style="display:none;"></div>
+        </div>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <!-- <script src="includes/js/jquery-1.8.0.min.js"></script> -->
+        <script src="includes/js/query.js"></script>
+        
+        <!-- If no online access, fallback to our hardcoded version of jQuery -->
+       <!--  <script>
+            window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')
+        </script> -->
+        <!-- Bootstrap JS -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- Custom JS -->
+        <!-- <script src="includes/js/script.js"></script> -->
+    </body>
+
+    </html>
